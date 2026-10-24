@@ -137,7 +137,7 @@ def generate_prediction(req: PredictionRequest):
     try:
         # Llamada estructurada a Gemini 2.5 Flash
         response = gemini_client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
